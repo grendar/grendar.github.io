@@ -172,7 +172,8 @@ window.Quarto = {
 
 <section id="wmwauc" class="level2">
 <h2 class="anchored" data-anchor-id="wmwauc">wmwAUC</h2>
-<p>An R package implementing the wmwAUC test – the Wilcoxon–Mann–Whitney statistic recalibrated under <span class="math inline">\(H_0\colon \mathrm{AUC} = 1/2\)</span>, distinct from the classical WMW test’s <span class="math inline">\(H_0\colon F = G\)</span> – together with AUC-calibrated confidence intervals and diagnostic plots. See the companion paper, Grendár (2025), <a href="https://arxiv.org/abs/2511.20308">arXiv:2511.20308</a>, and the <a href="research.qmd">Research</a> page for the broader detection coherence framework this package instantiates.</p>
+<p>The <code>wmwAUC</code> R package implements coherent inference under <span class="math inline">\(H_0\mathpunct{:} \mathrm{AUC} = 1/2\)</span> — the calibration null for the WMW detection functional — with bias-corrected variance estimation. Unlike the WMW test, calibrated under <span class="math inline">\(H_0\mathpunct{:} F_1 = F_2\)</span> and detection incoherent, <code>wmwAUC</code> is calibrated directly under <span class="math inline">\(H_0\mathpunct{:} \mathrm{AUC} = 1/2\)</span> and is detection coherent by construction.</p>
+<p>See the companion paper, Grendár (2025), <a href="https://arxiv.org/abs/2511.20308">arXiv:2511.20308</a>, and the <a href="research.qmd">Research</a> page for the broader detection coherence framework this package instantiates.</p>
 <div class="pub-links">
 <p><a href="https://cran.r-project.org/package=wmwAUC">CRAN</a> · <a href="https://github.com/grendar/wmwAUC">GitHub</a> · <a href="https://grendar.github.io/wmwAUC/">Package site</a></p>
 </div>
