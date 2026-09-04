@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research",
+    "section": "",
+    "text": "Some widely used tests are calibrated under a null narrower than the one their own test statistic implies. The gap between the two – the test’s blind spot – is a set of alternatives against which the test’s power does not grow with sample size, however large the sample: the test can neither reliably detect nor reliably rule out a real difference there. Detection coherence theory gives a set-theoretic framework for identifying which tests have this property and which do not.\nThe framework shows that the Wilcoxon–Mann–Whitney, Kruskal–Wallis, Friedman, and logrank tests – four of the most widely used nonparametric tests – are detection incoherent, while the Kolmogorov–Smirnov, Zaremba, and Maximum Mean Discrepancy tests are universally detection coherent.\nRelated work:\n\nGrendár, M. (2026). Detection coherence of tests. arXiv:2608.11177\nGrendár, M. (2025). Wilcoxon–Mann–Whitney Test of No Group Discrimination. arXiv:2511.20308 – the companion methods paper for the wmwAUC R package, recalibrating the WMW statistic under \\(H_0\\colon \\mathrm{AUC} = 1/2\\) instead of \\(H_0\\colon F = G\\).\nA companion paper on detection coherence of two-sample survival tests – forthcoming.\nA companion preprint on missed discoveries by detection incoherent tests, aimed at a biomedical audience – forthcoming.\n\nSee also the project website for further material, including real-data illustrations and the Monte Carlo code underlying the framework’s examples."
+  },
+  {
+    "objectID": "index.html#detection-coherence-of-tests",
+    "href": "index.html#detection-coherence-of-tests",
+    "title": "Research",
+    "section": "",
+    "text": "Some widely used tests are calibrated under a null narrower than the one their own test statistic implies. The gap between the two – the test’s blind spot – is a set of alternatives against which the test’s power does not grow with sample size, however large the sample: the test can neither reliably detect nor reliably rule out a real difference there. Detection coherence theory gives a set-theoretic framework for identifying which tests have this property and which do not.\nThe framework shows that the Wilcoxon–Mann–Whitney, Kruskal–Wallis, Friedman, and logrank tests – four of the most widely used nonparametric tests – are detection incoherent, while the Kolmogorov–Smirnov, Zaremba, and Maximum Mean Discrepancy tests are universally detection coherent.\nRelated work:\n\nGrendár, M. (2026). Detection coherence of tests. arXiv:2608.11177\nGrendár, M. (2025). Wilcoxon–Mann–Whitney Test of No Group Discrimination. arXiv:2511.20308 – the companion methods paper for the wmwAUC R package, recalibrating the WMW statistic under \\(H_0\\colon \\mathrm{AUC} = 1/2\\) instead of \\(H_0\\colon F = G\\).\nA companion paper on detection coherence of two-sample survival tests – forthcoming.\nA companion preprint on missed discoveries by detection incoherent tests, aimed at a biomedical audience – forthcoming.\n\nSee also the project website for further material, including real-data illustrations and the Monte Carlo code underlying the framework’s examples."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Detection coherence of tests\nSee the Research page for an overview and full list of papers in this line of work.\n\n\nEmpirical likelihood\n\nGrendár, M. and Judge, G. (2009). Asymptotic equivalence of empirical likelihood and Bayesian MAP. The Annals of Statistics, 2445–2457.\n\n\nGrendár, M. and Judge, G. (2009). Empty set problem of maximum empirical likelihood methods. Electron. J. Statist. 3, 1542-1555, (2009)\n\n\nGrendár, M. and Judge, G. (2012). Not all empirical divergence minimizing statistical methods are created equal? AIP Conference Proceedings, 1493(1), 432–435.\n\n\nGrendár, M. and Špitalský, V. (2017). Multinomial and empirical likelihood under convex constraints: Directions of recession, Fenchel duality, the PP algorithm. Electron. J. Statist. 11 (1), 2547-2612, (2017)\n\n\n\nMaxProb/MaxEnt, Pólya information divergence\n\nGrendár, M. Jr. and Grendár, M. (2001). What is the question that MaxEnt answers? A probabilistic interpretation. AIP Conference Proceedings, 568(1), 83–93.\n\n\nGrendár, M. Jr. and Grendár, M. (2001). Maximum entropy: Clearing up mysteries. Entropy, 3(2), 58–63.\n\n\nGrendár, M. and Niven, R. K. (2006). The Pólya Urn: Limit theorems, Pólya divergence, maximum entropy and maximum probability. arXiv:cond-mat/0612697\n\n\nGrendár, M. and Niven, R. K. (2010). The Pólya information divergence. Information Sciences, 180(21), 4189–4194.\n\n\n\nEffective support size\n\nGrendár, M. (2006). Entropy and effective support size. Entropy, 8(3), 169–174.\n\n\n\nRecurrence quantification analysis\n\nGrendár, M., Majerová, J. and Špitalský, V. (2013). Strong laws for recurrence quantification analysis. International Journal of Bifurcation and Chaos, 23(08), 1350147."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "An R package implementing the wmwAUC test – the Wilcoxon–Mann–Whitney statistic recalibrated under \\(H_0\\colon \\mathrm{AUC} = 1/2\\), distinct from the classical WMW test’s \\(H_0\\colon F = G\\) – together with AUC-calibrated confidence intervals and diagnostic plots. See the companion paper, Grendár (2025), arXiv:2511.20308, and the Research page for the broader detection coherence framework this package instantiates.\n\nCRAN · GitHub · Package site"
+  },
+  {
+    "objectID": "software.html#wmwauc",
+    "href": "software.html#wmwauc",
+    "title": "Software",
+    "section": "",
+    "text": "An R package implementing the wmwAUC test – the Wilcoxon–Mann–Whitney statistic recalibrated under \\(H_0\\colon \\mathrm{AUC} = 1/2\\), distinct from the classical WMW test’s \\(H_0\\colon F = G\\) – together with AUC-calibrated confidence intervals and diagnostic plots. See the companion paper, Grendár (2025), arXiv:2511.20308, and the Research page for the broader detection coherence framework this package instantiates.\n\nCRAN · GitHub · Package site"
+  }
+]

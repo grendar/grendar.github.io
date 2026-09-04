@@ -1,0 +1,55 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+h1.title {
+  font-size: 1.9em;
+  margin-bottom: 0.1em;
+}
+
+.affiliation {
+  color: #555;
+  font-size: 1.05em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 2em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.2em;
+}
+
+.pub-group h3 {
+  font-size: 1.05em;
+  color: #444;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+.pub-entry {
+  margin-bottom: 0.7em;
+}
+
+.pub-links a {
+  margin-right: 0.8em;
+  font-size: 0.92em;
+}
+
+.contact-block {
+  margin-top: 2em;
+  font-size: 0.95em;
+  color: #333;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
