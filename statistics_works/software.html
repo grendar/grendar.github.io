@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Marian Grendár</title>
+<title>Software – Marian Grendár</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -126,7 +126,7 @@ window.Quarto = {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link active" href="./software.html" aria-current="page"> 
 <span class="menu-text">Software</span></a>
   </li>  
 </ul>
@@ -153,7 +153,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Software</h1>
 </div>
 
 
@@ -170,18 +170,12 @@ window.Quarto = {
 </header>
 
 
-<section id="detection-coherence-of-tests" class="level2">
-<h2 class="anchored" data-anchor-id="detection-coherence-of-tests">Detection coherence of tests</h2>
-<p>Some widely used tests are calibrated under a null narrower than the one their own test statistic implies. The gap between the two – the test’s <em>blind spot</em> – is a set of alternatives against which the test’s power does not grow with sample size, however large the sample: the test can neither reliably detect nor reliably rule out a real difference there. <strong>Detection coherence theory</strong> gives a set-theoretic framework for identifying which tests have this property and which do not.</p>
-<p>The framework shows that the Wilcoxon–Mann–Whitney, Kruskal–Wallis, Friedman, and logrank tests – four of the most widely used nonparametric tests – are detection incoherent, while the Kolmogorov–Smirnov, Zaremba, and Maximum Mean Discrepancy tests are universally detection coherent.</p>
-<p><strong>Related work:</strong></p>
-<ul>
-<li>Grendár, M. (2026). <em>Detection coherence of tests.</em> <a href="https://arxiv.org/abs/2608.11177">arXiv:2608.11177</a></li>
-<li>Grendár, M. (2025). <em>Wilcoxon–Mann–Whitney Test of No Group Discrimination.</em> <a href="https://arxiv.org/abs/2511.20308">arXiv:2511.20308</a> – the companion methods paper for the <a href="./software.html">wmwAUC</a> R package, recalibrating the WMW statistic under <span class="math inline">\(H_0\colon \mathrm{AUC} = 1/2\)</span> instead of <span class="math inline">\(H_0\colon F = G\)</span>.</li>
-<li>A companion paper on detection coherence of two-sample survival tests – forthcoming.</li>
-<li>A companion preprint on missed discoveries by detection incoherent tests, aimed at a biomedical audience – forthcoming.</li>
-</ul>
-<p>See also the <a href="https://grendar.github.io/detection_coherence/">project website</a> for further material, including real-data illustrations and the Monte Carlo code underlying the framework’s examples.</p>
+<section id="wmwauc" class="level2">
+<h2 class="anchored" data-anchor-id="wmwauc">wmwAUC</h2>
+<p>An R package implementing the wmwAUC test – the Wilcoxon–Mann–Whitney statistic recalibrated under <span class="math inline">\(H_0\colon \mathrm{AUC} = 1/2\)</span>, distinct from the classical WMW test’s <span class="math inline">\(H_0\colon F = G\)</span> – together with AUC-calibrated confidence intervals and diagnostic plots. See the companion paper, Grendár (2025), <a href="https://arxiv.org/abs/2511.20308">arXiv:2511.20308</a>, and the <a href="research.qmd">Research</a> page for the broader detection coherence framework this package instantiates.</p>
+<div class="pub-links">
+<p><a href="https://cran.r-project.org/package=wmwAUC">CRAN</a> · <a href="https://github.com/grendar/wmwAUC">GitHub</a> · <a href="https://grendar.github.io/wmwAUC/">Package site</a></p>
+</div>
 
 
 </section>

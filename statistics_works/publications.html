@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Marian Grendár</title>
+<title>Publications – Marian Grendár</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,11 +89,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -153,7 +124,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
@@ -170,21 +141,56 @@ window.Quarto = {
 </header>
 
 
-<section id="detection-coherence-of-tests" class="level2">
-<h2 class="anchored" data-anchor-id="detection-coherence-of-tests">Detection coherence of tests</h2>
-<p>Some widely used tests are calibrated under a null narrower than the one their own test statistic implies. The gap between the two – the test’s <em>blind spot</em> – is a set of alternatives against which the test’s power does not grow with sample size, however large the sample: the test can neither reliably detect nor reliably rule out a real difference there. <strong>Detection coherence theory</strong> gives a set-theoretic framework for identifying which tests have this property and which do not.</p>
-<p>The framework shows that the Wilcoxon–Mann–Whitney, Kruskal–Wallis, Friedman, and logrank tests – four of the most widely used nonparametric tests – are detection incoherent, while the Kolmogorov–Smirnov, Zaremba, and Maximum Mean Discrepancy tests are universally detection coherent.</p>
-<p><strong>Related work:</strong></p>
-<ul>
-<li>Grendár, M. (2026). <em>Detection coherence of tests.</em> <a href="https://arxiv.org/abs/2608.11177">arXiv:2608.11177</a></li>
-<li>Grendár, M. (2025). <em>Wilcoxon–Mann–Whitney Test of No Group Discrimination.</em> <a href="https://arxiv.org/abs/2511.20308">arXiv:2511.20308</a> – the companion methods paper for the <a href="./software.html">wmwAUC</a> R package, recalibrating the WMW statistic under <span class="math inline">\(H_0\colon \mathrm{AUC} = 1/2\)</span> instead of <span class="math inline">\(H_0\colon F = G\)</span>.</li>
-<li>A companion paper on detection coherence of two-sample survival tests – forthcoming.</li>
-<li>A companion preprint on missed discoveries by detection incoherent tests, aimed at a biomedical audience – forthcoming.</li>
-</ul>
-<p>See also the <a href="https://grendar.github.io/detection_coherence/">project website</a> for further material, including real-data illustrations and the Monte Carlo code underlying the framework’s examples.</p>
-
-
+<div class="pub-group">
+<section id="detection-coherence-of-tests" class="level3">
+<h3 class="anchored" data-anchor-id="detection-coherence-of-tests">Detection coherence of tests</h3>
+<p>See the <a href="research.qmd">Research</a> page for an overview and full list of papers in this line of work.</p>
 </section>
+<section id="empirical-likelihood" class="level3">
+<h3 class="anchored" data-anchor-id="empirical-likelihood">Empirical likelihood</h3>
+<div class="pub-entry">
+<p>Grendár, M. and Judge, G. (2009). Asymptotic equivalence of empirical likelihood and Bayesian MAP. <em>The Annals of Statistics</em>, 2445–2457.</p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. and Judge, G. (2009). Empty set problem of maximum empirical likelihood methods. <em>Electron. J. Statist.</em> 3, 1542-1555, (2009)</p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. and Judge, G. (2012). Not all empirical divergence minimizing statistical methods are created equal? <em>AIP Conference Proceedings</em>, 1493(1), 432–435.</p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. and Špitalský, V. (2017). Multinomial and empirical likelihood under convex constraints: Directions of recession, Fenchel duality, the PP algorithm. <em>Electron. J. Statist.</em> 11 (1), 2547-2612, (2017)</p>
+</div>
+</section>
+<section id="maxprobmaxent-pólya-information-divergence" class="level3">
+<h3 class="anchored" data-anchor-id="maxprobmaxent-pólya-information-divergence">MaxProb/MaxEnt, Pólya information divergence</h3>
+<div class="pub-entry">
+<p>Grendár, M. Jr.&nbsp;and Grendár, M. (2001). What is the question that MaxEnt answers? A probabilistic interpretation. <em>AIP Conference Proceedings</em>, 568(1), 83–93.</p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. Jr.&nbsp;and Grendár, M. (2001). Maximum entropy: Clearing up mysteries. <em>Entropy</em>, 3(2), 58–63.</p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. and Niven, R. K. (2006). The Pólya Urn: Limit theorems, Pólya divergence, maximum entropy and maximum probability. <a href="https://arxiv.org/abs/cond-mat/0612697">arXiv:cond-mat/0612697</a></p>
+</div>
+<div class="pub-entry">
+<p>Grendár, M. and Niven, R. K. (2010). The Pólya information divergence. <em>Information Sciences</em>, 180(21), 4189–4194.</p>
+</div>
+</section>
+<section id="effective-support-size" class="level3">
+<h3 class="anchored" data-anchor-id="effective-support-size">Effective support size</h3>
+<div class="pub-entry">
+<p>Grendár, M. (2006). Entropy and effective support size. <em>Entropy</em>, 8(3), 169–174.</p>
+</div>
+</section>
+<section id="recurrence-quantification-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="recurrence-quantification-analysis">Recurrence quantification analysis</h3>
+<div class="pub-entry">
+<p>Grendár, M., Majerová, J. and Špitalský, V. (2013). Strong laws for recurrence quantification analysis. <em>International Journal of Bifurcation and Chaos</em>, 23(08), 1350147.</p>
+</div>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
