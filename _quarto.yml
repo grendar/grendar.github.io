@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: "."
+  render:
+    - index.qmd
+
+website:
+  title: "Marian Grendár"
+  navbar:
+    right:
+      - text: Detection coherence
+        href: https://grendar.github.io/detection_coherence/
+      - text: CNHplus
+        href: https://grendar.github.io/CNHplus/
+      - icon: github
+        href: https://github.com/grendar
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: article
+    grid:
+      body-width: 750px
