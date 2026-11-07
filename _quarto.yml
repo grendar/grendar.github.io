@@ -8,7 +8,7 @@ website:
   title: "Marian Grendár"
   navbar:
     right:
-      - text: Detection coherence
+      - text: Detection coherence of tests
         href: https://grendar.github.io/detection_coherence/
       - text: CNHplus
         href: https://grendar.github.io/CNHplus/
